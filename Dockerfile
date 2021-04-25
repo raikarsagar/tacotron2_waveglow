@@ -12,7 +12,7 @@ RUN python3 -m pip install torch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2
 RUN apt-get install git -y
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN git clone https://github.com/raikarsagar/tacotron2_inference --branch training_taco2 --single-branch --depth 1 /tacotron2
+RUN git clone https://github.com/raikarsagar/tacotron2_waveglow --branch training_taco2 --single-branch --depth 1 /tacotron2
 
 WORKDIR /tacotron2
 #RUN python3 -m pip install llvmlite --ignore-installed
